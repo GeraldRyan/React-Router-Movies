@@ -18,7 +18,7 @@ const Movie = (props) =>
       // You will NEED to add a dependency array to this effect hook
 
       // just need to transfer this ${id} expression into the proper numeric value and we're done.
-      console.log("params",params, params.id)
+      console.log("params",params,params.id)
       axios
         .get(`http://localhost:5000/api/movies/${params.id}`)
         .then(response =>
